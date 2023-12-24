@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=VT323&display=swap');
+
+/*
+============================
+Variables
+============================ 
+*/
+:root {
+    --pixel: "VT323", sans-serif;
+    --primary: Consolas;
+    --clr-grey: #989898;
+    --clr-grey-2: #A9A9A9;
+    --clr-white: #fff;
+    --clr-black: black;
+    --transition: 0.3s all linear;
+    --radius: 0.25rem;
+}
+
+/*
+============================
+Global Styles
+============================ 
+*/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--primary);
+    font-size: 0.875rem;
+}
+@media screen and (min-width: 800px){
+    body {
+        line-height: 1;
+    }
+}
+
+/*
+============================
+Random Number Generator
+============================ 
+*/
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+label {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.random-num {
+    font-size: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+input {
+    text-align: center;
+    outline: none;
+    background: var(--clr-grey);
+    font-family: var(--primary);
+    border-radius: var(--radius);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    min-width: 100%;
+    border: 2px solid var(--clr-black);
+}
+.generate-btn {
+    text-transform: capitalize;
+    font-family: var(--primary);
+    background: var(--clr-grey);
+    color: var(--clr-white);
+    padding: 2rem 6rem;
+    transition: var(--transition);
+    display: inline-block;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: var(--radius);
+    border: 2px solid var(--clr-black);
+}
+.generate-btn:hover {
+    background: #B0B0B0;
+}
