@@ -76,7 +76,7 @@ function changeToNewValue(randomNum){
         else{
             value.textContent = val - 1
         }
-    }, intervalTime)  
+    }, 1)  
 }
 
 // Initialize start up values
