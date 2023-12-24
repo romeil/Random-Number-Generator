@@ -47,7 +47,6 @@ function isValid(min, max){
 }
 
 function changeToNewValue(randomNum){
-    let intervalTime
     if (value.textContent === randomNum){
         return
     }
